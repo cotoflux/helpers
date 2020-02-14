@@ -1,0 +1,43 @@
+{
+    "name":"cotoflux/helper_pretty_array",
+    "type": "library",
+    "description": "Checks the login in a url and returns the token",
+    "keywords": ["cotoflux", "token", "url", "package"],
+    "homepage": "https://github.com/cotoflux/siteTest",
+    "license": "MIT",
+
+    "authors": [{
+        "name": "Nuria Puig",
+        "email": "cotoflux@gmail.com",
+        "homepage": "https://github.com/cotoflux",
+        "role": "Developer"
+    }],
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "9",
+        "symfony/var-dumper": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "cotoflux\\helper_pretty_array\\":"src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "cotoflux\\site_test\\LaravelServiceProvider"
+            ]
+            
+        }, 
+        "branch-alias": {
+            "dev-master": "1.0. -dev"
+        }
+        
+    }
+}
